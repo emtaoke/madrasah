@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<HTML expr:dir='data:blog.languageDirection'>
+<head>
+<meta charset='utf-8'/>
+<meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'/>
+
+<b:if cond='data:blog.pageType == &quot;index&quot;'>
+    <title><data:blog.pageTitle/></title>
+<b:else/>
+    <b:if cond='data:blog.pageType == &quot;error_page&quot;'>
+        <title>404: Page Not Found | <data:blog.title/></title>
+    <b:else/>
+        <title><data:blog.pageName/></title>
+    </b:if>
+</b:if>
+
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<meta content='blogger' name='generator'/>
+<link expr:href='data:blog.homepageUrl + &quot;favicon.ico&quot;' rel='icon' type='image/x-icon'/>
+<link expr:href='data:blog.url' rel='canonical'/>
+<link expr:href='data:blog.homepageUrl + &quot;feeds/posts/default&quot;' expr:title='data:blog.title + &quot; - Atom&quot;' rel='alternate' type='application/atom+xml'/>
+<link expr:href='data:blog.homepageUrl + &quot;feeds/posts/default?alt=rss&quot;' expr:title='data:blog.title + &quot; - RSS&quot;' rel='alternate' type='application/rss+xml'/>
+<link expr:href='&quot;http://www.blogger.com/feeds/&quot; + data:blog.blogId + &quot;/posts/default&quot;' expr:title='data:blog.title + &quot; - Atom&quot;' rel='alternate' type='application/atom+xml'/>
+<link href='http://www.blogger.com/openid-server.g' rel='openid.server'/>
+<link expr:href='data:blog.homepageUrl' rel='openid.delegate'/>
+
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+<b:if cond='data:blog.postImageThumbnailUrl'>
+<link expr:href='data:blog.postImageThumbnailUrl' rel='image_src'/>
+</b:if>
+</b:if>
+
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+<meta expr:content='data:blog.pageName' property='og:title'/>
+<meta expr:content='data:blog.canonicalUrl' property='og:url'/>
+<meta content='article' property='og:type'/>
+<b:if cond='data:blog.metaDescription'>
+<meta expr:content='data:blog.metaDescription' property='og:description'/>
+<b:else/>
+<meta expr:content='&quot;Silahkan baca artikel &quot; + data:blog.pageName + &quot; ini selengkapnya di &quot; + data:blog.title + &quot;&quot;' property='og:description'/>
+</b:if>
+</b:if>
+<meta expr:content='data:blog.title' property='og:site_name'/>
+<b:if cond='data:blog.url == data:blog.homepageUrl'>
+<meta content='website' property='og:type'/>
+<b:if cond='data:blog.metaDescription'>
+<meta expr:content='data:blog.metaDescription' property='og:description'/>
+<b:else/>
+<meta expr:content='&quot;Silahkan kunjungi &quot; + data:blog.pageTitle + &quot;Untuk membaca postingan-postingan menarik.&quot;' property='og:description'/>
+</b:if>
+</b:if>
+<b:if cond='data:blog.postImageUrl'>
+<meta expr:content='data:blog.postImageUrl' property='og:image'/>
+<b:else/>
+<b:if cond='data:blog.postImageThumbnailUrl'>
+<meta expr:content='data:blog.postThumbnailUrl' property='og:image'/>
+<b:else/>
+<meta content='URL Image here' property='og:image'/>
+</b:if>
+</b:if>
+<meta content='kode id fb admin' property='fb:admins'/>
+<meta content='kode id profil admin' property='fb:profile_id'/>
+
+&lt;style type=&quot;text/css&quot;&gt;
+&lt;!-- /*<b:skin><![CDATA[
+
+/*
+Bagi anda yang mengerti dan blogger profesional pastinya tidak akan menghapus link ini. Membuat template ini tidak cukup 1 jam bro!
+Blogger Template Style
+Name       : Madrasah
+Date       : 25 Nov 2018
+Updated by : Sam Hidayat
+*/
+
+#navbar-iframe{height:0;visibility:hidden;display:none;}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;vertical-align:baseline;background:transparent;}
+a:link,a:visited{color:#1BC7A5;text-decoration:none;margin-left:0px;margin-right:0px;}
+a img{border-width:0;}
+img{max-width:100%;vertical-align:middle;border:0;height:auto;}
+.quickedit{display:none;}
+.clear{clear:both;}
+body{background:#eaeaea;margin:0;padding:0;font-family: calibri;color:#2c3e50;}
+
+#outer-wrapper{
+background:#FFF;
+width:1024px;
+overflow:hidden;
+margin:0 auto;
+}
+
+*/]]></b:skin>
+<style type='text/css'>
+
+</style>
+
+<b:if cond='data:blog.pageType != &quot;static_page&quot;'>
+<b:if cond='data:blog.pageType != &quot;item&quot;'>
+<style type='text/css'>
+
+#footer-wrapper{text-align:center;background:#fff;padding:20px 0;margin:auto;border-top:1px solid rgba(0,0,0,0.06);max-width:1024px;}
+#footme{height:auto;padding:0 30px;margin:0 auto;overflow:hidden;color:#555;font-size:14px;font-weight:700;line-height:1.8}
+</style>
+</b:if></b:if>
+
+</head>
+<body>
+<div id='outer-wrapper'>
+<b:section class='main' id='main'>
+  <b:widget id='Blog1' locked='true' title='Posting Blog' type='Blog'></b:widget>
+</b:section>
+</div> 
+<footer id='footer-wrapper' itemscope='itemscope' itemtype='http://schema.org/WPFooter' role='contentinfo'>
+<div class='credit'>
+Copyright &#169; 2018. <a class='sitename' expr:href='data:blog.homepageUrl' expr:title='data:blog.title'><data:blog.title/></a> - All Rights Reserved<br/>
+Template Created by <a href='https://www.madrasah.infoalya.com/'>Madrasah Surabaya</a>
+</div>
+</footer>
+&lt;!--</body>--&gt;&lt;/body&gt;
+</HTML>
