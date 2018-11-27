@@ -151,3 +151,5 @@ pre {
 .table tr:nth-child(even) {
     background-color: #f2f2f2;
 }
+
+kbd{position:relative;color:#000000}kbd:hover:before{transform:scale(1.0);opacity:1;visibility:visible;transition:all .3s}kbd,blockquote{-webkit-user-select:text;-khtml-user-select:text;-moz-user-select:text;-ms-user-select:text;user-select:text}kbd{display:inline-block;border:1px solid #979797;box-shadow:2px 2px 1px#979797;border-radius:3px;padding:.2em .5em;margin:.2em;transition:all .3s}kbd:hover{border-color:#000000;color:#FF0000}kbd,blockquote{-webkit-user-select:text;-khtml-user-select:text;-moz-user-select:text;-ms-user-select:text;user-select:text}input::-webkit-input-placeholder,textarea::-webkit-input-placeholder,input:-moz-placeholder,textarea:-moz-placeholder,input.placeholder_text,textarea.placeholder_text{color:#888}[placeholder]:focus::-webkit-input-placeholder{transition:opacity .5s .5s ease;opacity:0}
